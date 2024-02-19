@@ -1,9 +1,25 @@
 import Image from 'next/image'
 import samsImages from './images.json'
 
-import { people } from '../page'
-import { useSearchParams } from 'next/navigation'
+import { people } from '../people'
 import SocialLinks from '@/app/SocialLinks'
+
+import type { Metadata } from 'next'
+ 
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+ 
+export async function generateMetadata(
+  { searchParams }: Props): Promise<Metadata> {
+  const artist = people.find((person) => person.slug === searchParams.slug)
+  
+  return {
+    title: `${artist?.name} | Iron Will Tattoo`,
+    description: artist?.description,
+  }
+}
 
 export default function ArtistSam({
   searchParams,
