@@ -1,17 +1,21 @@
 'use client'
 
+import Image from 'next/image'
+import { useWindowSize } from 'usehooks-ts'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
+import { Navigation, Scrollbar, A11y } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
-import Image from 'next/image'
-import { useWindowSize } from 'usehooks-ts'
+
+import samImage from './artists/sam/images.json'
 
 export default function Gallery() {
   const { width } = useWindowSize()
+
+  const samRandom5Images = samImage.sort(() => 0.5 - Math.random()).slice(0, 5)
 
   return (
     <Swiper
@@ -30,52 +34,18 @@ export default function Gallery() {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      <SwiperSlide>
-        <Image
-          src="/images/gallery1.jpeg"
-          alt="Iron Will Tattoo"
-          width={800}
-          height={600}
-          priority
-          className="mt-12 "
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src="/images/gallery2.jpeg"
-          alt="Iron Will Tattoo"
-          width={800}
-          height={600}
-          className="mt-12 "
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src="/images/gallery3.jpeg"
-          alt="Iron Will Tattoo"
-          width={800}
-          height={600}
-          className="mt-12 "
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src="/images/gallery4.jpeg"
-          alt="Iron Will Tattoo"
-          width={800}
-          height={600}
-          className="mt-12 "
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          src="/images/gallery5.jpeg"
-          alt="Iron Will Tattoo"
-          width={800}
-          height={600}
-          className="mt-12 "
-        />
-      </SwiperSlide>
+      {samRandom5Images.map((image, index) => (
+        <SwiperSlide key={index}>
+          <Image
+            alt="gallery"
+            width={500}
+            height={500}
+            priority={index < 4}
+            className="block h-[400px] w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+            src={`/images/sam/${image}`}
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   )
 }

@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import localFont from 'next/font/local'
 import { type Metadata } from 'next'
 
@@ -5,7 +6,6 @@ import { Providers } from '@/app/Providers'
 import { Layout } from '@/components/Layout'
 
 import '@/styles/globals.css'
-import clsx from 'clsx'
 
 export const metadata: Metadata = {
   title: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     'Tattoos of all styles, in a relaxed atmosphere with good company. We love what we do, and we want to share it with you.',
-  metadataBase: new URL('https://www.ironwilltattoo.club/'),
+  metadataBase: new URL('https://iron-will-tattoo.vercel.app/'),
   applicationName: 'Iron Will Tattoo',
   formatDetection: {
     telephone: true,

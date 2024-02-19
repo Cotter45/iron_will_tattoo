@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://www.ironwilltattoo.club/',
+      url: 'https://iron-will-tattoo.vercel.app/',
       lastModified: new Date(),
     },
   ]

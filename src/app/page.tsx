@@ -4,6 +4,8 @@ import AboutUsSection from './AboutUs'
 import SocialLinks from './SocialLinks'
 import ExpertiseSection from './Expertise'
 import ClientExperienceSection from './ClientExperienceSection'
+import GetInTouchSection from './GetInTouch'
+import Gallery from './Gallery'
 
 const container = {
   hidden: { opacity: 0.8 },
@@ -70,10 +72,14 @@ export default function Home() {
       <AboutUsSection item={item} container={container} />
       <ExpertiseSection item={item} container={container} />
       <ClientExperienceSection item={item} container={container} />
+      <GetInTouchSection item={item} container={container} />
 
-      {/* <div className="max-w-[95%] overflow-hidden">
-      <Gallery />
-      </div> */}
+      <div className="max-w-full overflow-hidden bg-black px-4 py-16 pb-20">
+        <h1 className="mr-auto mb-10 whitespace-nowrap font-title text-5xl text-white lg:text-7xl xl:text-8xl">
+          Recent Works
+        </h1>
+        <Gallery />
+      </div>
     </div>
   )
 }

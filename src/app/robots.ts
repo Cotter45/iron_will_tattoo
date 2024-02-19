@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/'],
     },
-    sitemap: 'https://www.ironwilltattoo.club/sitemap.xml',
+    sitemap: 'https://iron-will-tattoo.vercel.app/sitemap.xml',
   }
 }
