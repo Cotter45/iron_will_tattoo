@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
+import Gallery from './Gallery'
 import AboutUsSection from './AboutUs'
 import SocialLinks from './SocialLinks'
 import ExpertiseSection from './Expertise'
-import ClientExperienceSection from './ClientExperienceSection'
 import GetInTouchSection from './GetInTouch'
-import Gallery from './Gallery'
+import ClientExperienceSection from './ClientExperienceSection'
 
 const container = {
   hidden: { opacity: 0.8 },

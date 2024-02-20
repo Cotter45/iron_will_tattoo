@@ -33,7 +33,7 @@ export function Footer() {
                 <NavLink href="/Contact">Contact</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; 2016 Iron Will Tattoo All rights reserved.
+                &copy; 2016 Iron Will Tattoo. All rights reserved.
               </p>
             </div>
           </ContainerInner>

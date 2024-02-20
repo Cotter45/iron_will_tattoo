@@ -4,8 +4,8 @@
 const fs = require('fs')
 const path = require('path')
 
-const dir = './public/images/sam'
-const jsonFile = './public/images/sam.json'
+const dir = './public/images/lesyadanko'
+const jsonFile = './public/images/lesyadanko.json'
 
 fs.readdir(dir, (err, files) => {
   if (err) {

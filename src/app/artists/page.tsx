@@ -1,8 +1,7 @@
-import Image from 'next/image'
-import SocialLinks from '../SocialLinks'
 import Link from 'next/link'
 
 import { people } from './people'
+import SocialLinks from '../SocialLinks'
 import SiteImage from '@/components/SiteImage'
 
 export default function ArtistsPage() {
@@ -38,7 +37,7 @@ export default function ArtistsPage() {
               <SiteImage
                 height={400}
                 width={400}
-                className="aspect-[3/2] w-full rounded-2xl object-cover grayscale filter transition-all duration-300 ease-in-out hover:scale-105 hover:filter-none"
+                className="aspect-[3/2] w-full rounded-2xl object-cover grayscale filter transition-all duration-300 ease-in-out hover:filter-none"
                 src={person.imageUrl}
                 priority={true}
                 alt="Sam Portfolio Image"

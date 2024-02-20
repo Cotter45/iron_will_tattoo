@@ -1,11 +1,9 @@
-import Image from 'next/image'
-import samsImages from './images.json'
-
+import images from './images.json'
 import { people } from '../people'
 import SocialLinks from '@/app/SocialLinks'
+import SiteImage from '@/components/SiteImage'
 
 import type { Metadata } from 'next'
-import SiteImage from '@/components/SiteImage'
 
 type Props = {
   params: { slug: string }
@@ -22,6 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function ArtistSam({ params }: { params: { slug: string } }) {
   const artist = people.find((person) => person.slug === params.slug)
+  // @ts-ignore
+  const paths = images[artist.slug] as any
 
   return (
     <div className="container mx-auto px-5 py-2">
@@ -57,7 +57,7 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
 
       <div className="-m-1 flex flex-wrap md:-m-2">
         <div className="full flex flex-wrap">
-          {samsImages.map((image, index) => (
+          {artist && paths.map((image: string, index: number) => (
             <div
               key={index}
               className="w-full p-1 md:w-1/2 md:p-2 lg:w-1/3 xl:w-1/4"
@@ -68,7 +68,7 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
                 height={500}
                 priority={index < 4}
                 className="block h-full w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
-                src={`/images/sam/${image}`}
+                src={`/images/${artist.slug}/${image}`}
               />
             </div>
           ))}
