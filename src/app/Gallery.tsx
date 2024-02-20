@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { useMemo } from 'react'
 import { useWindowSize } from 'usehooks-ts'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Scrollbar, A11y } from 'swiper/modules'
@@ -15,8 +16,9 @@ import samImage from './artists/sam/images.json'
 export default function Gallery() {
   const { width } = useWindowSize()
 
-  const samRandom5Images = samImage.sort(() => 0.5 - Math.random()).slice(0, 5)
-
+  const samRandom5Images = useMemo(() => {
+    return samImage.sort(() => 0.5 - Math.random()).slice(0, 5);
+  }, []);
   return (
     <Swiper
       style={
