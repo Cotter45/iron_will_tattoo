@@ -11,9 +11,7 @@ type Props = {
   params: { slug: string }
 }
 
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const artist = people.find((person) => person.slug === params.slug)
 
   return {
@@ -22,31 +20,26 @@ export async function generateMetadata({
   }
 }
 
-export default function ArtistSam({
-  params,
-}: {
-  params: { slug: string }
-}) {
+export default function ArtistSam({ params }: { params: { slug: string } }) {
   const artist = people.find((person) => person.slug === params.slug)
 
   return (
     <div className="container mx-auto px-5 py-2">
       {artist && (
         <div className="mb-24">
-
           <div className="flex items-center gap-4">
-          <SiteImage
-            alt={`Artist ${artist?.name} Portfolio Image`}
-            width={500}
-            height={500}
-            priority
-            className="block h-24 w-24 !rounded-full bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
-            src={artist?.imageUrl}
+            <SiteImage
+              alt={`Artist ${artist?.name} Portfolio Image`}
+              width={500}
+              height={500}
+              priority
+              className="block h-24 w-24 !rounded-full bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+              src={artist?.imageUrl}
             />
 
-          <h3 className="font-title text-8xl font-semibold tracking-tight">
-            {artist?.name}
-          </h3>
+            <h3 className="font-title text-8xl font-semibold tracking-tight">
+              {artist?.name}
+            </h3>
           </div>
 
           <div className="mt-8 pl-8">

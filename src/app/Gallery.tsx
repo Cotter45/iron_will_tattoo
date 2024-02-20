@@ -37,8 +37,6 @@ export default function Gallery() {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
       {samRandom5Images.map((image, index) => (
         <SwiperSlide key={index}>

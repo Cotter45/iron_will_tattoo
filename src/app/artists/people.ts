@@ -7,7 +7,7 @@ export const people = [
     slug: 'invictusam',
     role: 'Tattoo Artist',
     imageUrl: '/images/artists/sam.jpeg',
-    relativeLink: '/artists/sam?slug=invictusam',
+    relativeLink: '/artists/invictusam',
     facebookUrl: 'https://www.facebook.com/invictusam',
     instagramUrl: 'https://www.instagram.com/samseatattoo/?hl=en',
   },

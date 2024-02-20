@@ -33,7 +33,7 @@ export default function SiteImage({
       className={clsx(
         'block rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none',
         isIntersecting ? 'filter-none' : 'grayscale',
-        className
+        className,
       )}
       src={src}
     />
