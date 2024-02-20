@@ -36,7 +36,7 @@ export default function AboutUsSection({ item, container }: any) {
           <Button
             variant="primary"
             href="/about"
-            className="mx-auto mt-8 w-[300px] text-white hover:bg-zinc-800 sm:mx-0"
+            className="mx-auto mt-8 w-[300px] !text-white hover:bg-zinc-800 sm:mx-0"
           >
             Learn More
           </Button>

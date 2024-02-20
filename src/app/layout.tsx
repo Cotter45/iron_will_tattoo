@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import localFont from 'next/font/local'
+import { Analytics } from '@vercel/analytics/react';
 import { type Metadata } from 'next'
 
 import { Providers } from '@/app/Providers'
@@ -63,6 +64,8 @@ export default function RootLayout({
             <Layout>{children}</Layout>
           </div>
         </Providers>
+
+        <Analytics />
       </body>
     </html>
   )

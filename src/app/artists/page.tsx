@@ -3,17 +3,17 @@ import SocialLinks from '../SocialLinks'
 import Link from 'next/link'
 
 import { people } from './people'
+import SiteImage from '@/components/SiteImage'
 
 export default function ArtistsPage() {
   return (
     <div className="mx-auto max-w-7xl px-6 pb-32 lg:px-8">
-      <div className="mx-auto max-w-2xl lg:mx-0">
+      <div className="mx-auto max-w-4xl lg:mx-0">
         <h2 className="font-title text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl">
-          Our team
+          Our Artists
         </h2>
         <p className="mt-6 font-title text-xl leading-8 text-zinc-600 dark:text-zinc-400">
-          We’re a dynamic group of individuals who are passionate about what we
-          do and dedicated to delivering the best results for our clients.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       </div>
       <ul
@@ -27,12 +27,13 @@ export default function ArtistsPage() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Image
+              <SiteImage
                 height={400}
                 width={400}
                 className="aspect-[3/2] w-full rounded-2xl object-cover grayscale filter transition-all duration-300 ease-in-out hover:scale-105 hover:filter-none"
                 src={person.imageUrl}
-                alt=""
+                priority={true}
+                alt="Sam Portfolio Image"
               />
             </Link>
 

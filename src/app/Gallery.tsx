@@ -11,14 +11,18 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 
-import samImage from './artists/sam/images.json'
+import samImage from './artists/[slug]/images.json'
+import SiteImage from '@/components/SiteImage'
 
 export default function Gallery() {
   const { width } = useWindowSize()
 
   const samRandom5Images = useMemo(() => {
-    return samImage.sort(() => 0.5 - Math.random()).slice(0, 5);
-  }, []);
+    return samImage.sort(() => 0.5 - Math.random()).slice(0, 5)
+  }, [])
+
+  const amountOfSlides = width < 640 ? 1 : width < 1024 ? 2 : 3
+
   return (
     <Swiper
       style={
@@ -29,7 +33,7 @@ export default function Gallery() {
       }
       modules={[Navigation, Scrollbar, A11y]}
       spaceBetween={25}
-      slidesPerView={width < 640 ? 1 : 3}
+      slidesPerView={amountOfSlides}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
@@ -38,7 +42,7 @@ export default function Gallery() {
     >
       {samRandom5Images.map((image, index) => (
         <SwiperSlide key={index}>
-          <Image
+          <SiteImage
             alt="gallery"
             width={500}
             height={500}
