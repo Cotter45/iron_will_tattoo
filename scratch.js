@@ -1,11 +1,10 @@
-// read all files from dir ./public/images/sam
+// read all files from dir ./public/images/[slug]
 // get the filenames and write them to a json file
 
 const fs = require('fs')
-const path = require('path')
 
-const dir = './public/images/lesyadanko'
-const jsonFile = './public/images/lesyadanko.json'
+const dir = './public/images/kennycantwell'
+const jsonFile = './public/images/kennycantwell.json'
 
 fs.readdir(dir, (err, files) => {
   if (err) {
