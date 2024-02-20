@@ -33,11 +33,11 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
               width={500}
               height={500}
               priority
-              className="block h-24 w-24 !rounded-full bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+              className="block h-16 w-16 !rounded-full bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
               src={artist?.imageUrl}
             />
 
-            <h3 className="font-title text-8xl font-semibold tracking-tight">
+            <h3 className="font-title text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-semibold tracking-tight">
               {artist?.name}
             </h3>
           </div>
