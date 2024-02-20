@@ -9,7 +9,7 @@ export default function ArtistsPage() {
   return (
     <div className="mx-auto max-w-7xl px-6 pb-32 lg:px-8">
       <div className="mx-auto max-w-4xl lg:mx-0">
-        <h2 className="font-title text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl">
+        <h2 className="font-title text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight">
           Our Artists
         </h2>
         <p className="mt-6 font-title text-xl leading-8 text-zinc-600 dark:text-zinc-400">
