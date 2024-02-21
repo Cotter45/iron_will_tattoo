@@ -8,7 +8,7 @@ import { Button } from '@/components/Button'
 
 export default function AboutUsSection({ item, container }: any) {
   const { isIntersecting, ref } = useIntersectionObserver({
-    threshold: 0.6,
+    threshold: 0.2,
     freezeOnceVisible: true,
   })
 
