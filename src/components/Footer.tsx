@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import SocialLinks from '@/app/SocialLinks'
 
 function NavLink({
   href,
@@ -30,8 +31,11 @@ export function Footer() {
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/artists">Artists</NavLink>
-                <NavLink href="/Contact">Contact</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
               </div>
+
+              <SocialLinks />
+
               <p className="text-sm text-zinc-400 dark:text-zinc-400">
                 &copy; 2016 Iron Will Tattoo. All rights reserved.
               </p>

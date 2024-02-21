@@ -1,5 +1,3 @@
-import typographyPlugin from '@tailwindcss/typography'
-
 import type { Config } from 'tailwindcss'
 
 import typographyStyles from './typography'
@@ -11,6 +9,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'selector',
+  plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
       fontFamily: {

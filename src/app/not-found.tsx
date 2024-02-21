@@ -1,5 +1,3 @@
-import localFont from 'next/font/local'
-
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import Goon from '@/components/Goon'
@@ -20,7 +18,7 @@ export default function NotFound() {
           Page not found
         </h1>
 
-        <p className="mt-4 max-w-md font-title text-base shadow-black drop-shadow sm:text-lg">
+        <p className="mt-4 max-w-md text-base shadow-black drop-shadow sm:text-lg">
           Sorry, we couldn’t find the page you’re looking for.
         </p>
 
