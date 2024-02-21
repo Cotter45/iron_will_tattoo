@@ -61,7 +61,7 @@ export default function Gallery() {
             width={500}
             height={500}
             priority={index < 4}
-            className="block h-[400px] w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+            className="block h-[400px] w-full bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
             src={`/images/lesyadanko/${image}`}
           />
         </SwiperSlide>

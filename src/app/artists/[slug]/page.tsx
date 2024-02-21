@@ -42,8 +42,8 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
             </h3>
           </div>
 
-          <div className="mt-8 pl-8">
-            <p className="font-title text-xl leading-8 text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 pl-8">
+            <p className="mb-4 text-base leading-6 text-zinc-600 dark:text-zinc-400">
               {artist?.description}
             </p>
 

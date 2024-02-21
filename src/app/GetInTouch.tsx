@@ -27,28 +27,31 @@ export default function GetInTouchSection({ item, container }: any) {
           Get In Touch
         </h1>
 
-        <div className="flex w-full flex-col gap-2 pl-4 md:items-center">
-          <h6 className="text-left font-title text-2xl font-semibold text-zinc-600">
+        <div className="flex w-full flex-col gap-2 pl-4 items-center">
+          <h6 className="text-left font-title text-xl font-semibold text-zinc-600">
             Drop us a line to begin your ink journey.
           </h6>
 
           <a
             href="tel:267-893-7625"
-            className="mt-4 text-left font-title text-lg text-zinc-600 underline transition-colors duration-300 ease-in-out hover:text-teal-600 md:text-xl"
+            className="mt-4 text-left text-lg text-zinc-600 underline transition-colors duration-300 ease-in-out hover:text-teal-600 md:text-xl"
           >
-            By Phone - 267-893-7625
+            Phone - 267-893-7625
           </a>
 
           <a
             href="mailto:ironwilltattooclub@gmail.com"
-            className="text-left font-title text-lg text-zinc-600 underline transition-colors duration-300 ease-in-out hover:text-teal-600 md:text-xl"
+            className="text-left text-lg text-zinc-600 underline transition-colors duration-300 ease-in-out hover:text-teal-600 md:text-xl"
           >
-            By Email - ironwilltattooclub@gmail.com
+            Email - ironwilltattooclub@gmail.com
           </a>
 
-          <div className="flex items-center gap-4 text-left font-title text-lg text-zinc-600 md:text-xl">
+          <div className="flex flex-col justify-center gap-4 text-left text-lg text-zinc-600 md:text-xl">
             <p>On Social Media -</p>
+            <div className='mx-auto'>
+
             <SocialLinks />
+            </div>
           </div>
         </div>
       </motion.div>

@@ -11,7 +11,7 @@ export default function ArtistsPage() {
         <h2 className="font-title text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight">
           Our Artists
         </h2>
-        <p className="mt-6 font-title text-xl leading-8 text-zinc-600 dark:text-zinc-400">
+        <p className="mt-6 text-base leading-6 text-zinc-600 dark:text-zinc-400">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -53,7 +53,7 @@ export default function ArtistsPage() {
                 href={person.relativeLink}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="flex items-center justify-between font-title text-lg font-semibold leading-7 text-teal-600 hover:text-teal-500"
+                className="flex items-center justify-between text-lg font-semibold leading-7 text-teal-600 hover:text-teal-500"
               >
                 View Portfolio
               </Link>

@@ -19,19 +19,19 @@ export default function ExpertiseSection({ item, container }: any) {
       className="flex w-full flex-col items-center gap-8 px-4 py-16 pb-20 md:flex-row dark:bg-white"
     >
       <motion.div variants={item} className="flex w-full flex-col">
-        <h1 className="mb-4 mr-auto whitespace-nowrap font-title text-5xl text-zinc-900 lg:text-7xl xl:text-8xl">
+        <h1 className="mb-4 mr-auto whitespace-nowrap font-title text-4xl font-semibold text-zinc-900 lg:text-7xl xl:text-8xl">
           Areas of Expertise
         </h1>
 
         <div className="flex md:max-w-[85%]">
           <div className="flex w-full flex-col items-center md:w-1/2">
-            <h6 className="mr-auto mt-4 font-title text-3xl font-bold text-zinc-600">
+            <h6 className="mr-auto mt-4 font-title font-bold text-lg text-zinc-600">
               Services
             </h6>
 
             <motion.ul
               variants={item}
-              className="mr-4 mt-4 font-title text-lg text-zinc-600 md:text-xl"
+              className="mr-4 mt-4 text-lg text-zinc-600 md:text-xl"
             >
               <li>Custom Commissions</li>
               <li>Redesign & Coverups</li>
@@ -44,13 +44,13 @@ export default function ExpertiseSection({ item, container }: any) {
           </div>
 
           <div className="flex w-full flex-col items-center md:w-1/2">
-            <h6 className="mr-auto mt-4 font-title text-3xl font-bold text-zinc-600">
+            <h6 className="mr-auto mt-4 font-title font-bold text-lg text-zinc-600">
               Styles
             </h6>
 
             <motion.ul
               variants={item}
-              className="mr-4 mt-4 font-title text-lg text-zinc-600 md:text-xl"
+              className="mr-4 mt-4 text-lg text-zinc-600 md:text-xl"
             >
               <li>Black & Grey</li>
               <li>Vibrant Color</li>

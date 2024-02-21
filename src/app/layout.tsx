@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 }
 
 const titleFont = localFont({
-  src: './TitleFont.ttf',
+  src: './Metanoia.ttf',
   variable: '--font-title',
 })
 

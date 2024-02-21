@@ -48,7 +48,7 @@ export default function Home() {
           </h1>
 
           <div className="flex animate-title flex-col md:max-w-[85%]">
-            <p className="mt-4 font-title text-xl text-zinc-600 md:text-2xl dark:text-zinc-400">
+            <p className="mt-4 text-lg text-zinc-600 md:text-2xl dark:text-zinc-400">
               Tattoos of all styles, in a relaxed atmosphere with good company.
               We love what we do, and we want to share it with you.
             </p>
@@ -76,7 +76,7 @@ export default function Home() {
 
       <div className="max-w-full overflow-hidden bg-black px-4 py-16 pb-20">
         <h1 className="mb-10 mr-auto whitespace-nowrap font-title text-5xl text-white lg:text-7xl xl:text-8xl">
-          Recent Works
+          Recent Work
         </h1>
         <Gallery />
       </div>
