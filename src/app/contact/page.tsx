@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import { EnvelopeIcon } from '@heroicons/react/24/outline'
 import {
   BuildingOffice2Icon,
   ChevronDownIcon,
   PhoneIcon,
 } from '@heroicons/react/20/solid'
-import Link from 'next/link'
+
 import { Button } from '@/components/Button'
 
 export const metadata = {
@@ -32,11 +33,11 @@ export default function ContactPage() {
               href="tel:267-893-7625"
               target="_blank"
               rel="noopener noreferrer"
-              className="gap-x-4/5 flex p-6 ring-1 ring-inset ring-black/10 transition-all duration-300 ease-in-out hover:ring-teal-600 dark:ring-white/10"
+              className="gap-x-4/5 flex p-6 ring-1 ring-inset ring-black/10 transition-all duration-300 ease-in-out hover:ring-black dark:ring-white/10 dark:hover:ring-white"
             >
               {' '}
               <PhoneIcon
-                className="h-7 w-5 flex-none text-teal-400"
+                className="h-7 w-5 flex-none text-zinc-900 dark:text-white"
                 aria-hidden="true"
               />
               <div className="ml-2 text-base leading-7">
@@ -51,11 +52,11 @@ export default function ContactPage() {
               href="mailto:ironwilltattooclub@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="gap-x-4/5 flex p-6 ring-1 ring-inset ring-black/10 transition-all duration-300 ease-in-out hover:ring-teal-600 dark:ring-white/10"
+              className="gap-x-4/5 flex p-6 ring-1 ring-inset ring-black/10 transition-all duration-300 ease-in-out hover:ring-black dark:ring-white/10 dark:hover:ring-white"
             >
               {' '}
               <EnvelopeIcon
-                className="h-7 w-5 flex-none text-teal-400"
+                className="h-7 w-5 flex-none text-zinc-900 dark:text-white"
                 aria-hidden="true"
               />
               <div className="ml-2 text-base leading-7">
@@ -70,10 +71,10 @@ export default function ContactPage() {
               href="https://www.google.com/maps/dir/?api=1&destination=502+N+Tyson+Avenue+Glenside+PA+19038"
               target="_blank"
               rel="noopener noreferrer"
-              className="gap-x-4/5 flex p-6 ring-1 ring-inset ring-black/10 transition-all duration-300 ease-in-out hover:ring-teal-600 dark:ring-white/10"
+              className="gap-x-4/5 flex p-6 ring-1 ring-inset ring-black/10 transition-all duration-300 ease-in-out hover:ring-black dark:ring-white/10 dark:hover:ring-white"
             >
               <BuildingOffice2Icon
-                className="h-7 w-5 flex-none text-teal-400"
+                className="h-7 w-5 flex-none text-zinc-900 dark:text-white"
                 aria-hidden="true"
               />
               <div className="ml-2 text-base leading-7">
