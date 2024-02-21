@@ -23,14 +23,14 @@ export default function GetInTouchSection({ item, container }: any) {
         variants={item}
         className="flex w-full flex-col md:items-center"
       >
-        <h1 className="mb-4 whitespace-nowrap font-title text-5xl text-zinc-900 lg:text-7xl xl:text-8xl">
+        <h2 className="mb-4 whitespace-nowrap font-title text-5xl text-zinc-900 lg:text-7xl xl:text-8xl">
           Get In Touch
-        </h1>
+        </h2>
 
-        <div className="flex w-full flex-col gap-2 pl-4 items-center">
-          <h6 className="text-left font-title text-xl font-semibold text-zinc-600">
+        <div className="flex w-full flex-col items-center gap-2 pl-4">
+          <h3 className="text-left font-title text-xl font-semibold text-zinc-600">
             Drop us a line to begin your ink journey.
-          </h6>
+          </h3>
 
           <a
             href="tel:267-893-7625"
@@ -48,9 +48,8 @@ export default function GetInTouchSection({ item, container }: any) {
 
           <div className="flex flex-col justify-center gap-4 text-left text-lg text-zinc-600 md:text-xl">
             <p>On Social Media -</p>
-            <div className='mx-auto'>
-
-            <SocialLinks />
+            <div className="mx-auto">
+              <SocialLinks />
             </div>
           </div>
         </div>

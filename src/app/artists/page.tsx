@@ -8,9 +8,9 @@ export default function ArtistsPage() {
   return (
     <div className="mx-auto max-w-7xl px-6 pb-32 lg:px-8">
       <div className="mx-auto max-w-4xl lg:mx-0">
-        <h2 className="font-title text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold tracking-tight">
+        <h1 className="font-title text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl xl:text-8xl">
           Our Artists
-        </h2>
+        </h1>
         <p className="mt-6 text-base leading-6 text-zinc-600 dark:text-zinc-400">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever

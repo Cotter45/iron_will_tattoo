@@ -40,7 +40,9 @@ export default function ClientExperienceSection({ item, container }: any) {
         className="mt-4 flex flex-col items-center justify-between gap-8 md:flex-row lg:px-8"
       >
         <div className="flex flex-1 flex-col">
-          <h4 className="font-title font-semibold text-xl text-white">Melissa B.</h4>
+          <h3 className="font-title text-xl font-semibold text-white">
+            Melissa B.
+          </h3>
 
           <p className="mt-4 text-lg text-zinc-400">
             {
@@ -50,7 +52,9 @@ export default function ClientExperienceSection({ item, container }: any) {
         </div>
 
         <div className="flex flex-1 flex-col">
-          <h4 className="font-title font-semibold text-xl text-white">Leah H.</h4>
+          <h3 className="font-title text-xl font-semibold text-white">
+            Leah H.
+          </h3>
 
           <p className="mt-4 text-lg text-zinc-400">
             {

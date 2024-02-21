@@ -31,6 +31,7 @@ export default function SocialLinks({
         className="text-sm text-zinc-500 duration-500 hover:text-zinc-300"
       >
         <InstagramIcon className="from-light to-dark h-9 w-9 rounded-xl bg-gradient-to-b fill-zinc-500 transition-colors duration-300 ease-in-out hover:bg-rose-800 hover:fill-orange-200" />
+        <span className="sr-only">Iron Will Tattoo Instagram</span>
       </Link>
 
       <Link
@@ -46,6 +47,7 @@ export default function SocialLinks({
         className="text-sm text-zinc-500 duration-500 hover:text-zinc-300"
       >
         <FacebookIcon className="h-9 w-9 rounded-full border border-zinc-500 fill-zinc-500 transition-colors duration-300 ease-in-out hover:border-blue-600 hover:bg-white hover:fill-blue-600" />
+        <span className="sr-only">Iron Will Tattoo Facebook</span>
       </Link>
     </div>
   )

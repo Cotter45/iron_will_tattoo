@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { type Metadata } from 'next'
 
 import { Providers } from '@/app/Providers'
@@ -56,12 +56,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx(titleFont.variable, 'w-full h-full antialiased')}
+      className={clsx(titleFont.variable, 'h-full w-full antialiased')}
       suppressHydrationWarning
     >
-      <body className="flex w-full h-full bg-zinc-50 dark:bg-black">
+      <body className="flex h-full w-full bg-zinc-50 dark:bg-black">
         <Providers>
-          <div className="relative flex mx-auto w-full">
+          <div className="relative mx-auto flex w-full">
             <Layout>{children}</Layout>
           </div>
         </Providers>

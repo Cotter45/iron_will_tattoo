@@ -24,7 +24,7 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
   const paths = images[artist.slug] as any
 
   return (
-    <div className="container py-2 mx-auto px-4 md:px-2">
+    <div className="container mx-auto px-4 py-2 md:px-2">
       {artist && (
         <div className="mb-24">
           <div className="flex items-center gap-4">
@@ -37,9 +37,9 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
               src={artist?.imageUrl}
             />
 
-            <h3 className="font-title text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-semibold tracking-tight">
+            <h1 className="font-title text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl xl:text-8xl">
               {artist?.name}
-            </h3>
+            </h1>
           </div>
 
           <div className="mt-6 pl-8">
@@ -55,23 +55,24 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <div className="flex flex-wrap w-full">
+      <div className="flex w-full flex-wrap">
         <div className="full flex flex-wrap justify-evenly">
-          {artist && paths.map((image: string, index: number) => (
-            <div
-              key={index}
-              className="w-full lg:w-[49%] py-1 xl:w-[32%] 2xl:w-[24%]"
-            >
-              <SiteImage
-                alt={`Artist ${artist?.name} Portfolio Image`}
-                width={500}
-                height={500}
-                priority={index < 4}
-                className="block h-full w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
-                src={`/images/${artist.slug}/${image}`}
-              />
-            </div>
-          ))}
+          {artist &&
+            paths.map((image: string, index: number) => (
+              <div
+                key={index}
+                className="w-full py-1 lg:w-[49%] xl:w-[32%] 2xl:w-[24%]"
+              >
+                <SiteImage
+                  alt={`Artist ${artist?.name} Portfolio Image`}
+                  width={500}
+                  height={500}
+                  priority={index < 4}
+                  className="block h-full w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+                  src={`/images/${artist.slug}/${image}`}
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -387,7 +387,7 @@ export function Header() {
           }}
         >
           <Container
-            className="top-[var(--header-top,theme(spacing.6))] right-0 w-full"
+            className="right-0 top-[var(--header-top,theme(spacing.6))] w-full"
             style={{
               position:
                 'var(--header-inner-position)' as React.CSSProperties['position'],

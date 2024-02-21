@@ -11,7 +11,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </div> */}
       <div className="relative flex w-full flex-col">
         <Header />
-        <main className="mt-24 flex-auto w-full max-w-7xl mx-auto">
+        <main className="mx-auto mt-24 w-full max-w-7xl flex-auto">
           {children}
         </main>
         <Footer />
