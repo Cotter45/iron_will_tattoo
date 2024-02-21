@@ -24,7 +24,7 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
   const paths = images[artist.slug] as any
 
   return (
-    <div className="container mx-auto px-5 py-2">
+    <div className="container py-2 mx-auto px-4 md:px-2">
       {artist && (
         <div className="mb-24">
           <div className="flex items-center gap-4">
@@ -55,12 +55,12 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <div className="-m-1 flex flex-wrap md:-m-2">
-        <div className="full flex flex-wrap">
+      <div className="flex flex-wrap w-full">
+        <div className="full flex flex-wrap justify-evenly">
           {artist && paths.map((image: string, index: number) => (
             <div
               key={index}
-              className="w-full p-1 md:w-1/2 md:p-2 lg:w-1/3 xl:w-1/4"
+              className="w-full lg:w-[49%] py-1 xl:w-[32%] 2xl:w-[24%]"
             >
               <SiteImage
                 alt={`Artist ${artist?.name} Portfolio Image`}

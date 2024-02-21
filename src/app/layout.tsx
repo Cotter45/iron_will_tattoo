@@ -61,7 +61,7 @@ export default function RootLayout({
     >
       <body className="flex w-full h-full bg-zinc-50 dark:bg-black">
         <Providers>
-          <div className="flex w-full">
+          <div className="relative flex mx-auto w-full">
             <Layout>{children}</Layout>
           </div>
         </Providers>
