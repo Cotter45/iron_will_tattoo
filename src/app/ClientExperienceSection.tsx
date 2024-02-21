@@ -18,7 +18,7 @@ export default function ClientExperienceSection({ item, container }: any) {
       className="flex w-full flex-col gap-8 bg-black px-4 py-16 pb-20"
     >
       <motion.div variants={item} className="flex w-full flex-col text-white">
-        <h2 className="mb-4 mr-auto whitespace-nowrap font-title text-4xl font-semibold lg:text-7xl xl:text-8xl">
+        <h2 className="mb-4 mr-auto whitespace-nowrap font-title text-4xl font-semibold md:text-5xl">
           Client Experiences
         </h2>
 

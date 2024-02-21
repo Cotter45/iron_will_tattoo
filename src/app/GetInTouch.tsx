@@ -23,15 +23,11 @@ export default function GetInTouchSection({ item, container }: any) {
         variants={item}
         className="flex w-full flex-col md:items-center"
       >
-        <h2 className="mb-4 whitespace-nowrap font-title text-5xl text-zinc-900 lg:text-7xl xl:text-8xl">
+        <h2 className="mb-4 whitespace-nowrap font-title text-5xl text-zinc-900 md:text-5xl">
           Get In Touch
         </h2>
 
         <div className="flex w-full flex-col items-center gap-2 pl-4">
-          <h3 className="text-left font-title text-xl font-semibold text-zinc-600">
-            Drop us a line to begin your ink journey.
-          </h3>
-
           <a
             href="tel:267-893-7625"
             className="mt-4 text-left text-lg text-zinc-600 underline transition-colors duration-300 ease-in-out hover:text-teal-600 md:text-xl"

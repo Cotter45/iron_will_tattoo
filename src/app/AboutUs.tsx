@@ -21,7 +21,7 @@ export default function AboutUsSection({ item, container }: any) {
       className="mt-24 flex w-full flex-col items-center gap-8 bg-black px-4 py-16 pb-20 md:flex-row-reverse"
     >
       <motion.div variants={item} className="flex flex-col items-center">
-        <h2 className="mr-auto whitespace-nowrap font-title text-4xl font-semibold text-white md:pl-12 lg:text-7xl xl:text-8xl">
+        <h2 className="mr-auto whitespace-nowrap font-title text-4xl font-semibold text-white md:pl-12 md:text-5xl">
           About Us
         </h2>
 

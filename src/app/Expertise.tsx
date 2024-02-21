@@ -19,7 +19,7 @@ export default function ExpertiseSection({ item, container }: any) {
       className="flex w-full flex-col items-center gap-8 px-4 py-16 pb-20 md:flex-row dark:bg-white"
     >
       <motion.div variants={item} className="flex w-full flex-col">
-        <h2 className="mb-4 mr-auto whitespace-nowrap font-title text-4xl font-semibold text-zinc-900 lg:text-7xl xl:text-8xl">
+        <h2 className="mb-4 mr-auto whitespace-nowrap font-title text-4xl font-semibold text-zinc-900 md:text-5xl">
           Areas of Expertise
         </h2>
 

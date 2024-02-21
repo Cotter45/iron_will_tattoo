@@ -75,7 +75,7 @@ export default function Home() {
       <GetInTouchSection item={item} container={container} />
 
       <div className="max-w-full overflow-hidden bg-black px-4 py-16 pb-20">
-        <h2 className="mb-10 mr-auto whitespace-nowrap font-title text-5xl text-white lg:text-7xl xl:text-8xl">
+        <h2 className="mb-10 mr-auto whitespace-nowrap font-title text-5xl text-white md:text-5xl">
           Recent Work
         </h2>
         <Gallery />

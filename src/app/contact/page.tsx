@@ -120,7 +120,7 @@ export default function ContactPage() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full border-0 px-3.5 py-2 leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white text-base"
+                  className="block w-full border-0 px-3.5 py-2 text-base leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white"
                 />
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full border-0 px-3.5 py-2 leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white text-base"
+                  className="block w-full border-0 px-3.5 py-2 text-base leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white"
                 />
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                   name="email"
                   id="email"
                   autoComplete="email"
-                  className="block w-full border-0 px-3.5 py-2 leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white text-base"
+                  className="block w-full border-0 px-3.5 py-2 text-base leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white"
                 />
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   <select
                     id="country"
                     name="country"
-                    className="h-full border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:focus:ring-white text-base"
+                    className="h-full border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-base text-zinc-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:focus:ring-white"
                   >
                     <option>US</option>
                     <option>CA</option>
@@ -189,7 +189,7 @@ export default function ContactPage() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full border-0 px-3.5 py-2 pl-20 leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white text-base"
+                  className="block w-full border-0 px-3.5 py-2 pl-20 text-base leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white"
                 />
               </div>
             </div>
@@ -205,7 +205,7 @@ export default function ContactPage() {
                   name="message"
                   id="message"
                   rows={4}
-                  className="block w-full border-0 px-3.5 py-2 leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white text-base"
+                  className="block w-full border-0 px-3.5 py-2 text-base leading-6 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-zinc-900 dark:bg-zinc-900 dark:focus:ring-white"
                   defaultValue={''}
                 />
               </div>
