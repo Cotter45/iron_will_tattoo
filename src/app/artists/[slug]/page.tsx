@@ -70,7 +70,7 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
                   width={500}
                   height={500}
                   priority
-                  className="mb-3 block w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none min-h-[300px]"
+                  className="mb-3 block w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none min-w-full min-h-[300px]"
                   src={`/images/${artist.slug}/${image}`}
                 />
               </div>
