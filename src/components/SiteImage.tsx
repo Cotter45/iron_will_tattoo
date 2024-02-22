@@ -24,18 +24,20 @@ export default function SiteImage({
   })
 
   return (
-    <Image
-      ref={ref}
-      alt={alt}
-      width={width}
-      height={height}
-      priority={priority}
-      className={clsx(
-        'block rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none',
-        isIntersecting ? 'filter-none' : 'grayscale',
-        className,
-      )}
-      src={src}
-    />
+    <div className="w-full overflow-hidden rounded-lg">
+      <Image
+        ref={ref}
+        alt={alt}
+        width={width}
+        height={height}
+        priority={priority}
+        className={clsx(
+          'block rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none',
+          isIntersecting ? 'filter-none' : 'grayscale',
+          className,
+        )}
+        src={src}
+      />
+    </div>
   )
 }

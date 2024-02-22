@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import images from './images.json'
 import { people } from '../people'
 import SocialLinks from '@/app/SocialLinks'
@@ -28,12 +30,12 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
       {artist && (
         <div className="mb-24">
           <div className="flex items-center gap-4">
-            <SiteImage
+            <Image
               alt={`Artist ${artist?.name} Portfolio Image`}
               width={500}
               height={500}
               priority
-              className="block h-16 w-16 !rounded-full bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+              className="block h-16 w-16 !rounded-full bg-zinc-500 object-cover object-center"
               src={artist?.imageUrl}
             />
 
@@ -55,20 +57,20 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <div className="flex w-full flex-wrap">
-        <div className="full flex flex-wrap justify-evenly">
+      <div className="flex w-full">
+        <div className="w-full auto-rows-auto columns-1 md:columns-2 lg:columns-3">
           {artist &&
             paths.map((image: string, index: number) => (
               <div
-                key={index}
-                className="w-full py-1 lg:w-[49%] xl:w-[32%] 2xl:w-[24%]"
+                key={image + index}
+                className="w-full py-1"
               >
                 <SiteImage
                   alt={`Artist ${artist?.name} Portfolio Image`}
                   width={500}
                   height={500}
-                  priority={index < 4}
-                  className="block h-full w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
+                  priority
+                  className="mb-3 block w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none min-h-[300px]"
                   src={`/images/${artist.slug}/${image}`}
                 />
               </div>
