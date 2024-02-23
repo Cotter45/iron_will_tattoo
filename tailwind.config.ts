@@ -33,7 +33,7 @@ const config: Config = {
       typography: typographyStyles,
       animation: {
         'fade-in': 'fade-in 0.75s ease-in-out forwards',
-        title: 'title 2s ease-out forwards',
+        title: 'title 2s ease-in-out forwards',
         'fade-in-left': 'fade-in-left 3s ease-in-out forwards',
         'fade-in-right': 'fade-in-right 3s ease-in-out forwards',
         'fade-left': 'fade-left 3s ease-in-out forwards',
@@ -42,9 +42,6 @@ const config: Config = {
       keyframes: {
         'fade-in': {
           '0%': {
-            opacity: '0%',
-          },
-          '75%': {
             opacity: '0%',
           },
           '100%': {
@@ -107,20 +104,12 @@ const config: Config = {
         },
         title: {
           '0%': {
-            'line-height': '60%',
             opacity: '0',
+            transform: 'translateY(25px)',
           },
-          '25%': {
-            'line-height': '80%',
-            opacity: '0%',
-          },
-          '80%': {
-            opacity: '100%',
-          },
-
           '100%': {
-            'line-height': '100%',
             opacity: '100%',
+            transform: 'translateY(0)',
           },
         },
       },

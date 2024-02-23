@@ -58,19 +58,16 @@ export default function ArtistSam({ params }: { params: { slug: string } }) {
       )}
 
       <div className="flex w-full">
-        <div className="w-full auto-rows-auto columns-1 md:columns-2 lg:columns-3">
+        <div className="w-full columns-1 auto-rows-auto md:columns-2 lg:columns-3">
           {artist &&
             paths.map((image: string, index: number) => (
-              <div
-                key={image + index}
-                className="w-full py-1"
-              >
+              <div key={image + index} className="w-full py-1">
                 <SiteImage
                   alt={`Artist ${artist?.name} Portfolio Image`}
                   width={500}
                   height={500}
                   priority
-                  className="mb-3 block w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none min-w-full min-h-[300px]"
+                  className="mb-3 block min-h-[300px] w-full min-w-full rounded-lg bg-zinc-500 object-cover object-center grayscale filter transition-all duration-300 hover:filter-none"
                   src={`/images/${artist.slug}/${image}`}
                 />
               </div>
