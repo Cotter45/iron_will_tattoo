@@ -65,10 +65,7 @@ export default function ExpertiseSection({ item, container }: any) {
         </div>
       </motion.div>
 
-      <motion.div
-        variants={item}
-        className="mt-10 flex max-w-[85%] animate-fade-in md:max-w-[35%]"
-      >
+      <div className="mt-10 flex max-w-[85%] animate-fade-in md:max-w-[35%]">
         <Image
           src="/images/gallery6.webp"
           alt="Iron Will Tattoo"
@@ -77,7 +74,7 @@ export default function ExpertiseSection({ item, container }: any) {
           priority
           className="object-contain md:-mt-0"
         />
-      </motion.div>
+      </div>
     </motion.div>
   )
 }

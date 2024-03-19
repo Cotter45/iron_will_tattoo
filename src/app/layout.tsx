@@ -40,6 +40,11 @@ export const metadata: Metadata = {
     'tattooer',
     'tattooing',
     'tattooed',
+    'iron will tattoo',
+    'iron will',
+    'glenside',
+    'PA',
+    'Pennsylvania',
   ],
 }
 

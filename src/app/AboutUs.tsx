@@ -35,18 +35,15 @@ export default function AboutUsSection({ item, container }: any) {
 
           <Button
             variant="primary"
-            href="/about"
+            href="/contact"
             className="mx-auto mt-8 w-[300px] !text-white hover:bg-zinc-800 sm:mx-0"
           >
-            Learn More
+            Reach Out
           </Button>
         </div>
       </motion.div>
 
-      <motion.div
-        variants={item}
-        className="mt-10 flex max-w-[85%] md:max-w-[35%]"
-      >
+      <div className="mt-10 flex max-w-[85%] md:max-w-[35%]">
         <Image
           src="/images/gallery4.jpeg"
           alt="Iron Will Tattoo"
@@ -55,7 +52,7 @@ export default function AboutUsSection({ item, container }: any) {
           priority
           className="object-contain md:-mt-0"
         />
-      </motion.div>
+      </div>
     </motion.div>
   )
 }

@@ -51,10 +51,7 @@ export default function GetInTouchSection({ item, container }: any) {
         </div>
       </motion.div>
 
-      <motion.div
-        variants={item}
-        className="mt-10 flex max-w-[85%] animate-fade-in md:max-w-[50%]"
-      >
+      <div className="mt-10 flex max-w-[85%] animate-fade-in md:max-w-[50%]">
         <Image
           src="/images/gallery5.jpeg"
           alt="Iron Will Tattoo"
@@ -63,7 +60,7 @@ export default function GetInTouchSection({ item, container }: any) {
           priority
           className="object-contain md:-mt-0"
         />
-      </motion.div>
+      </div>
     </motion.div>
   )
 }

@@ -43,7 +43,7 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="flex w-full flex-col-reverse items-center justify-end p-4 pb-16 md:mt-10 md:flex-row md:justify-between md:pb-32 md:pl-14">
         <div className="flex flex-col">
-          <h1 className="z-10 mt-6 animate-title whitespace-nowrap font-title text-4xl sm:text-5xl md:mt-0 lg:text-7xl">
+          <h1 className="z-10 mt-6 animate-title whitespace-nowrap font-title text-4xl font-semibold sm:text-5xl md:mt-0 lg:text-7xl">
             Iron Will Tattoo
           </h1>
 
